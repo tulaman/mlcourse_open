@@ -110,3 +110,6 @@ ENV/
 # data
 data/faces/
 data/news_data/
+data/movie_reviews_train.csv
+data/stackoverflow_sample_125k.tsv
+data/top10_tags.tsv
