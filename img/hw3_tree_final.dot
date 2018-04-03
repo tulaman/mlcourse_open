@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<ap_hi_140_160 &le; 0.5<br/>gini = 0.5<br/>samples = 70000<br/>value = [35021, 34979]<br/>class = Healthy>, fillcolor="#e5813900"] ;
+1 [label=<ap_hi_160_180 &le; 0.5<br/>gini = 0.485<br/>samples = 55564<br/>value = [32557, 23007]<br/>class = Healthy>, fillcolor="#e581394b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<cholesterol_3 &le; 0.5<br/>gini = 0.471<br/>samples = 51663<br/>value = [32023, 19640]<br/>class = Healthy>, fillcolor="#e5813963"] ;
+1 -> 2 ;
+3 [label=<gini = 0.453<br/>samples = 46977<br/>value = [30688, 16289]<br/>class = Healthy>, fillcolor="#e5813978"] ;
+2 -> 3 ;
+4 [label=<gini = 0.407<br/>samples = 4686<br/>value = [1335, 3351]<br/>class = Ill>, fillcolor="#399de599"] ;
+2 -> 4 ;
+5 [label=<smoke &le; 0.5<br/>gini = 0.236<br/>samples = 3901<br/>value = [534, 3367]<br/>class = Ill>, fillcolor="#399de5d7"] ;
+1 -> 5 ;
+6 [label=<gini = 0.24<br/>samples = 3514<br/>value = [489, 3025]<br/>class = Ill>, fillcolor="#399de5d6"] ;
+5 -> 6 ;
+7 [label=<gini = 0.206<br/>samples = 387<br/>value = [45, 342]<br/>class = Ill>, fillcolor="#399de5dd"] ;
+5 -> 7 ;
+8 [label=<age_55_60 &le; 0.5<br/>gini = 0.283<br/>samples = 14436<br/>value = [2464, 11972]<br/>class = Ill>, fillcolor="#399de5cb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<age_50_55 &le; 0.5<br/>gini = 0.274<br/>samples = 10127<br/>value = [1657, 8470]<br/>class = Ill>, fillcolor="#399de5cd"] ;
+8 -> 9 ;
+10 [label=<gini = 0.265<br/>samples = 6786<br/>value = [1065, 5721]<br/>class = Ill>, fillcolor="#399de5d0"] ;
+9 -> 10 ;
+11 [label=<gini = 0.292<br/>samples = 3341<br/>value = [592, 2749]<br/>class = Ill>, fillcolor="#399de5c8"] ;
+9 -> 11 ;
+12 [label=<cholesterol_1 &le; 0.5<br/>gini = 0.304<br/>samples = 4309<br/>value = [807, 3502]<br/>class = Ill>, fillcolor="#399de5c4"] ;
+8 -> 12 ;
+13 [label=<gini = 0.274<br/>samples = 1720<br/>value = [282, 1438]<br/>class = Ill>, fillcolor="#399de5cd"] ;
+12 -> 13 ;
+14 [label=<gini = 0.323<br/>samples = 2589<br/>value = [525, 2064]<br/>class = Ill>, fillcolor="#399de5be"] ;
+12 -> 14 ;
+}
